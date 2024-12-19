@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+}
+
+.main-div {
+    background-color: #081b31;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    height: 5rem;
+    color: white;
+}
+
+.main-div h1 {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+#toggle {
+    color: white;
+    background-color: #f083a2;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#toggle:hover {
+    background-color: #db7390;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.choice:hover {
+    background-color: #f083a2;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.choice img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+#user-score, #comp-score {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.msg-container {
+    margin-top: 2rem;
+}
+
+#msg {
+    color: white;
+    background-color: #081b31;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#restart-btn {
+    background-color: #081b31;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 2rem auto;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#restart-btn:hover {
+    background-color: #f083a2;
+}
+
+@media screen and (max-width: 768px) {
+    .choice {
+        height: 100px;
+        width: 100px;
+    }
+
+    .choice img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .score-board {
+        gap: 2rem;
+    }
+
+    #msg {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    #restart-btn {
+        font-size: 0.9rem;
+    }
+}
